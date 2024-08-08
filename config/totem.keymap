@@ -53,6 +53,20 @@
             bindings = <&kp PLUS>;
             key-positions = <4 36>;
         };
+
+        eq_gt {
+            bindings = <&eq_gt>;
+            key-positions = <3 28>;
+        };
+    };
+
+    macros {
+        eq_gt: eq_gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "EQ_GT";
+        };
     };
 
     keymap {
