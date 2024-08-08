@@ -134,7 +134,7 @@
         sym {
             bindings = <
         &trans         &kp LS(AMPS)  &kp LS(STAR)   &kp BSLH       &kp EQUAL      &trans  &trans  &trans  &trans  &trans
-        &kp GRAVE      &kp LS(DLLR)  &kp LS(PRCNT)  &kp LCTRL      &kp SQT        &trans  &trans  &trans  &trans  &trans
+        &kp GRAVE      &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp SQT        &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(DQT)    &trans  &trans  &trans  &trans  &trans  &trans
                                      &trans         &trans         &trans         &trans  &trans  &trans
             >;
