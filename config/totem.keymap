@@ -63,6 +63,15 @@
         };
     };
 
+    behaviors {
+        layer1: layer1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER1";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&mo 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -85,10 +94,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q       &kp W       &kp F        &kp P        &kp G        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
-                &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D        &kp H    &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&bt BT_CLR_ALL  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp K    &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp DEL      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+                &kp Q        &kp W       &kp F       &kp P        &kp B      &kp J    &kp L        &kp U       &kp Y       &kp SEMI
+                &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G      &kp H    &mt RSHFT N  &mt RGUI E  &mt RALT I  &mt RCTRL O
+&bt BT_CLR_ALL  &kp Z        &kp X       &kp C       &kp V        &kp B      &kp K    &kp H        &kp COMMA   &kp DOT     &kp FSLH     &kp BSLH
+                                         &kp DEL     &lt NAV TAB  &layer1    &kp RET  &lt SYM ESC  &kp BSPC
             >;
         };
 
