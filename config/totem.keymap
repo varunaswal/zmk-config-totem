@@ -55,15 +55,6 @@
         };
     };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
