@@ -56,7 +56,12 @@
 
         eq_gt {
             bindings = <&eq_gt>;
-            key-positions = <3 28>;
+            key-positions = <28 4>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <3 36>;
         };
     };
 
